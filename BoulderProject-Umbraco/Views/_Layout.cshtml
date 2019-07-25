@@ -1,9 +1,12 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @{
     Layout = null;
+    var mastHeadImage = "Lennox nachher.jpg";
+    var containerImage = "Kindertraining.jpg";
 }
 
-@* the fun starts here *@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +29,32 @@
 
     <!--Custom CSS-->
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-
+    <style>
+    header.masthead {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../img/@mastHeadImage");
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/@mastHeadImage");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    }
+    .page-section.background-kids{
+     background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../img/@containerImage");
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/@containerImage");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    }
+          .birthday-hack{
+     background: url("../img/Geburtstag.jpg");
+    background:url("../img/Geburtstag.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    }
+    </style>
 </head>
 <body id="page-top">
     <!-- Navigation -->
