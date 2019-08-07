@@ -431,6 +431,12 @@
     <Content Include="img\bg-masthead.jpg" />
     <Content Include="img\Boulder-Point_Logo18_Vektor_4c_ai.svg" />
     <Content Include="img\bouldering-climber-climbing-9606.jpg" />
+    <Content Include="img\boulder_map.JPG" />
+    <Content Include="img\Geburtstag.jpg" />
+    <Content Include="img\Georg nachher.jpg" />
+    <Content Include="img\Gruppe 2 nachher .jpg" />
+    <Content Include="img\Kindertraining.jpg" />
+    <Content Include="img\Lennox nachher.jpg" />
     <Content Include="img\portfolio\fullsize\1.jpg" />
     <Content Include="img\portfolio\fullsize\2.jpg" />
     <Content Include="img\portfolio\fullsize\3.jpg" />
@@ -452,6 +458,8 @@
     <Content Include="img\portfolio\thumbnails\4.jpg" />
     <Content Include="img\portfolio\thumbnails\5.jpg" />
     <Content Include="img\portfolio\thumbnails\6.jpg" />
+    <Content Include="img\Talissa.jpg" />
+    <Content Include="img\Trine nachher.JPG" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
