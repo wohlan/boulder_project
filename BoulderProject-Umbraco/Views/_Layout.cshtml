@@ -3,6 +3,8 @@
     Layout = null;
     var mastHeadImage = "Lennox nachher.jpg";
     var containerImage = "Kindertraining.jpg";
+    var basicImage = "Georg nachher.jpg";
+
 }
 
 
@@ -46,6 +48,15 @@
     background-attachment: scroll;
     background-size: cover;
     }
+         .page-section.bg-basic-class{
+     background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../img/@basicImage");
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/@basicImage");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    }
+       
           .birthday-hack{
      background: url("../img/Geburtstag.jpg");
     background:url("../img/Geburtstag.jpg");
@@ -61,7 +72,8 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                BOULDER POINT
+                <img src="~/img/logo-boulder-point.png"  alt="">
+                @*BOULDER POINT*@
             </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
