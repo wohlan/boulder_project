@@ -2,7 +2,9 @@
 @{
     Layout = null;
     var mastHeadImage = "Lennox nachher.jpg";
-    var containerImage = "Kindertraining.jpg";
+    var containerImage = "Geburtstag.jpg";
+    var basicImage = "Georg nachher.jpg";
+    ViewBag.Title = "Boulder-Point";
 }
 
 
@@ -13,7 +15,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     <!-- Font Awesome Icons -->
     <link href="../Content/fontawesome.min.css" rel="stylesheet">
     <link href="../Content/all.min.css" rel="stylesheet">
@@ -46,6 +48,15 @@
     background-attachment: scroll;
     background-size: cover;
     }
+         .page-section.bg-basic-class{
+     background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../img/@basicImage");
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/@basicImage");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    }
+       
           .birthday-hack{
      background: url("../img/Geburtstag.jpg");
     background:url("../img/Geburtstag.jpg");
@@ -58,28 +69,41 @@
 </head>
 <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                BOULDER POINT
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container-fluid px-xl-5">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    @*   <img src="~/img/logo-boulder-point.png"  alt="">*@
+                    @*BOULDER POINT*@
+                </a>
+
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+            <div class="collapse navbar-collapse mr-xl-5" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">Allgemein</a>
+                        <a class="nav-link js-scroll-trigger" href="#classes">Kurse</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#services">Angebote</a>
+                        <a class="nav-link js-scroll-trigger" href="#kids">Kids</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#portfolio">Gallery</a>
+                        <a class="nav-link js-scroll-trigger" href="#classes">Team Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#times">Öffnungszeiten</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#prices">Preise</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#map">Anfahrt</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
                     </li>
+
                 </ul>
             </div>
         </div>

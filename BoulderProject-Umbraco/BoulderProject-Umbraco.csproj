@@ -437,6 +437,8 @@
     <Content Include="img\Gruppe 2 nachher .jpg" />
     <Content Include="img\Kindertraining.jpg" />
     <Content Include="img\Lennox nachher.jpg" />
+    <Content Include="img\logo-boulder-point.png" />
+    <Content Include="img\logo-boulder-point-inverted.png" />
     <Content Include="img\portfolio\fullsize\1.jpg" />
     <Content Include="img\portfolio\fullsize\2.jpg" />
     <Content Include="img\portfolio\fullsize\3.jpg" />
@@ -487,6 +489,7 @@
     <Content Include="webfonts\fa-brands-400.svg" />
     <Content Include="webfonts\fa-regular-400.svg" />
     <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="img\Boulder-Point-Einverstaendniserklaerung.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -563,6 +566,9 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\_Layout.cshtml" />
+    <Content Include="Views\AGB.cshtml" />
+    <Content Include="Views\Datenschutz.cshtml" />
+    <Content Include="Views\Impressum.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

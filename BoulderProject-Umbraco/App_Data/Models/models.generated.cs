@@ -48,6 +48,13 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+
+		///<summary>
+		/// Überschrift
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("uberschrift")]
+		public string Uberschrift => this.Value<string>("uberschrift");
 	}
 
 	/// <summary>Home</summary>
