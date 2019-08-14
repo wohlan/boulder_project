@@ -566,6 +566,9 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\_Layout.cshtml" />
+    <Content Include="Views\AGB.cshtml" />
+    <Content Include="Views\Datenschutz.cshtml" />
+    <Content Include="Views\Impressum.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
