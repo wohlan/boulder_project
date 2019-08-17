@@ -11559,7 +11559,8 @@ header.masthead {
             }
 
         #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
-            opacity: 1;
+            opacity: 0.75;
+            font-size:2rem;
         }
 
 
