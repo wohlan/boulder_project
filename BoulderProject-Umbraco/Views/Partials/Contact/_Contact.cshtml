@@ -10,15 +10,13 @@
 
     <!--first name-->
     <div class="form-group text-left">
+        <label>
 
-   
-            <label>
+            Vorname
+        </label>
+        @*@Html.TextBoxFor(m => m.FirstName)*@
+        <input class="form-control" id="FirstName" name="FirstName" type="text" value="">
 
-                Vorname
-            </label>
-            @*@Html.TextBoxFor(m => m.FirstName)*@
-            <input class="form-control" id="FirstName" name="FirstName" type="text" value="">
-       
     </div>
 
     <!--last name-->
