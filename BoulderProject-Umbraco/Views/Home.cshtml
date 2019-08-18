@@ -13,7 +13,7 @@
                 <hr class="divider my-4">
             </div>
             <div class="col-lg-8 align-self-baseline">
-                <p class="text-white-75 font-weight-light mb-5">Starte noch heute und suche die Herausforderung an unseren individuell entworfenen Routen. Egal ob Anfänger oder Profi!</p>
+                <p class="text-white-75 font-weight-light mb-5">@Model.Value("infoText")</p>
                 @*<a class="btn btn-primary btn-xl js-scroll-trigger" href="#times">Mehr Erfahren!</a>*@
             </div>
         </div>
@@ -28,13 +28,13 @@
                 <h2 class="text-white mt-0">Öffnungszeiten</h2>
                 <hr class="divider light my-4">
                 <p class="text-white mb-4">
-                    Dienstags - Freitags	:	15:00 - 22:00 Uhr
+                    @Model.Value("offnungszeit1")
                     <br />
                     <br />
-                    Samstags - Sonntags	:	11:00 - 21:00 Uhr
+                    @Model.Value("offnungszeit2")
                     <br />
                     <br />
-                    Montag	:	Ruhetag
+                    @Model.Value("ruhetag")
                 </p>
             </div>
         </div>
@@ -42,19 +42,13 @@
             <div class="col-lg-3"></div>
             <div class="col-lg-3 text-center">
                 <p class="text-white mb-4">
-                    An Feiertagen ist immer von
-                    <br />
-                    11:00 - 21:00 Uhr geöffnet.
+                    @Model.Value("feiertage")
                 </p>
 
             </div>
             <div class="col-lg-3 text-center">
                 <p class="text-white mb-4">
-                    In den Ferien (SH) haben wir
-                    <br />
-                    Dienstags und Freitags
-                    <br />
-                    schon ab 12:00 Uhr geöffnet.
+                    @Model.Value("ferien")
                 </p>
             </div>
             <div class="col-lg-3"></div>
@@ -65,22 +59,18 @@
                 <p class="text-white-75">
                     Ausnahmen:
                     <br />
-                    Heiligabend, 1. Weihnachtstag,
-                    <br />
-                    Silvester, Neujahr und Ostersonntag
-                    <br />
-                    haben wir geschlossen.
+                    @Model.Value("ausnahmen")
                 </p>
             </div>
         </div>
         @*<hr class="divider light my-4">
 
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
 
-                <a class="btn btn-light btn-xl js-scroll-trigger" href="#kids">Zu den Angeboten!</a>
-            </div>
-        </div>*@
+                    <a class="btn btn-light btn-xl js-scroll-trigger" href="#kids">Zu den Angeboten!</a>
+                </div>
+            </div>*@
     </div>
 </section>
 
@@ -91,19 +81,19 @@
             <div class="col-lg-1"></div>
             <div class="col-lg-5">
                 <div class="container text-center">
-                    <h2 class="mb-4">BOULDERN MIT KIDS</h2>
+                    <h2 class="mb-4">@Model.Value("kidsUberschrift")</h2>
                     <div class="row justify-content-center text-left">
                         <div class="col-lg-8 ">
                             <hr class="divider light my-4">
                             <p class="text-white mb-4">
-                                Platzhalter Text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan orci sit amet porta euismod. Nam id turpis sed sem posuere porttitor varius eu risus. Donec condimentum ligula magna, sed pellentesque mi vestibulum placerat. Suspendisse id nibh nec lectus elementum vestibulum in vitae urna. Suspendisse potenti. Donec ex diam, posuere ut iaculis et, eleifend laoreet leo. Ut tempor, sem sed eleifend pretium, justo ex sollicitudin augue, a blandit eros justo id sapien. Mauris viverra tempus massa, ut cursus felis feugiat id.
+                                @Model.Value("kidsText1")
                             </p>
                         </div>
                         <div class="col-lg-8 text-center">
                             <hr class="divider light my-4">
 
                             <p class="text-white mb-4 text-left">
-                                Gäste unter 12 Jahren dürfen nur unter Aufsicht eines Erziehungsberechtigten oder einer sonstigen volljährigen Person, die die Aufsichtspflicht befugtermaßen ausübt, bouldern. Die "Einverständniserklärung für Minderjährige" kann vor Ort unterschrieben werden.
+                                @Model.Value("kidsText2")
 
                                 <br />
                                 <br />
@@ -116,12 +106,12 @@
             </div>
             <div class="col-lg-5 mt-5 mt-lg-0">
                 <div class="container text-center">
-                    <h2 class="mb-4">GEBURTSTAGE</h2>
+                    <h2 class="mb-4">@Model.Value("geburtstageUberschrift")</h2>
                     <div class="row justify-content-center">
                         <div class="col-lg-8 text-center">
                             <hr class="divider light my-4">
                             <p class="text-white mb-4 text-left">
-                                Platzhalter Text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan orci sit amet porta euismod. Nam id turpis sed sem posuere porttitor varius eu risus. Donec condimentum ligula magna, sed pellentesque mi vestibulum placerat. Suspendisse id nibh nec lectus elementum vestibulum in vitae urna. Suspendisse potenti. Donec ex diam, posuere ut iaculis et, eleifend laoreet leo. Ut tempor, sem sed eleifend pretium, justo ex sollicitudin augue, a blandit eros justo id sapien. Mauris viverra tempus massa, ut cursus felis feugiat id.
+                                @Model.Value("geburtstageText1")
 
                             </p>
                         </div>
@@ -129,7 +119,7 @@
                             <hr class="divider light my-4">
 
                             <p class="text-white mb-4 text-left">
-                                Frage jetzt den gewünschten Termin über unser Kontaktformular an.
+                                @Model.Value("geburtstageText2")
 
 
                                 <br />
@@ -157,7 +147,7 @@
         <br />
         <br />
         @*<hr class="divider light my-4">
-        <a class="btn btn-light btn-xl js-scroll-trigger" href="#prices">Unsere Preise!</a>*@
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#prices">Unsere Preise!</a>*@
     </div>
 </section>
 
@@ -175,103 +165,96 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Tageskarte</td>
-                    <td>9,90,-</td>
-                    <td>7,90,-</td>
-                </tr>
-                <tr>
-                    <td>
-                        11er Karte
-                        <br />
-                        <small>(10x bezahlen, 11x klettern)</small>
-                    </td>
-                    <td>99,-</td>
-                    <td>79,-</td>
-                </tr>
-                <tr>
-                    <td>
-                        Monatskarte
-                        <br />
-                        <small>(ohne Vertrag)</small>
-                    </td>
-                    <td>76,-</td>
-                    <td>60,-</td>
-                </tr>
-                <tr>
-                    <td>
-                        Monatsabo
-                        <br />
-                        <small>(mit Jahresvertrag)</small>
-                    </td>
-                    <td>76,-</td>
-                    <td>60,-</td>
-                </tr>
-                <tr>
-                    <td>
-                        Halbjahreskarte
-                    </td>
-                    <td>282,-</td>
-                    <td>231,-</td>
-                </tr>
-                <tr>
-                    <td>
-                        Jahreskarte
-                    </td>
-                    <td>499,-</td>
-                    <td>389,-</td>
-                </tr>
-                <tr>
-                    <td>
-                        Familienkarte
-                        <br />
-                        <small>(2 Erw.+ eig. Kinder unter 18 J.)</small>
-                    </td>
-                    <td>29,-</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>
-                        Kindergeburtstag
-                        <br />
-                        <small>(mit Trainer/Betreuung)</small>
-                    </td>
-                    <td>19,- p. Kind</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>
-                        Schulklassen
-                        <br />
-                        <small>(mit Trainer/Betreuung)</small>
-                    </td>
-                    <td>7,- p. Schüler</td>
-                    <td></td>
-                </tr>
+                @foreach (var part in (string[])Model.Value("angebot"))
+                {
+                    var stringArray = part.Split(';');
 
-                <tr>
-                    <th>Leihausrüstung</th>
-                    <th></th>
-                    <th></th>
+                    <tr>
+                        @if (stringArray[0].Contains('('))
+                        {
+                            var twoParts = stringArray[0].Split('(');
+                            <td>
+                                @twoParts[0]
+                                <br />
+                                <small>(@twoParts[1]</small>
+                            </td>
+                        }
+                        else
+                        {
+                            <td>@stringArray[0]</td>
+                        }
+                        @if (@stringArray.Length > 1)
+                        {
+                            <td>@stringArray[1]</td>
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
+                        @if (@stringArray.Length > 2)
+                        {
+                            <td>@stringArray[2]</td>
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
+                    </tr>
+                }
+                @if ((string[])Model.Value("leihausrustung") != null)
+                {
+                    <tr>
+                        <th>Leihausrüstung</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
 
-                </tr>
-                <tr>
-                    <td>Kletterschuhe</td>
-                    <td>3,50,-</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>
-                        Chalkbag + Chalk
-                    </td>
-                    <td>2,-</td>
-                    <td></td>
+                    foreach (var part in (string[])Model.Value("leihausrustung"))
+                    {
+
+                        var stringArray = part.Split(';');
+
+                        <tr>
+                            @if (stringArray[0].Contains('('))
+                            {
+                                var twoParts = stringArray[0].Split('(');
+                                <td>
+                                    @twoParts[0]
+                                    <br />
+                                    <small>(@twoParts[1]</small>
+                                </td>
+                            }
+                            else
+                            {
+                                <td>@stringArray[0]</td>
+                            }
+                            @if (@stringArray.Length > 1)
+                            {
+                                <td>@stringArray[1]</td>
+                            }
+                            else
+                            {
+                                <td></td>
+                            }
+                            @if (@stringArray.Length > 2)
+                            {
+                                <td>@stringArray[2]</td>
+                            }
+                            else
+                            {
+                                <td></td>
+                            }
+                        </tr>
+                    }
+                }
+
+
             </tbody>
         </table>
 
 
         @*<hr class="divider my-4" />
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#map">Zur Anfahrt!</a>*@
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#map">Zur Anfahrt!</a>*@
     </div>
 </section>
 
@@ -284,26 +267,26 @@
             <div class="col-lg-1"></div>
             <div class="col-lg-5">
                 <div class="container text-center">
-                    <h2 class="mb-4">Technikkurse</h2>
+                    <h2 class="mb-4">@Model.Value("technikkurseUberschrift")</h2>
                     <div class="row justify-content-center text-left">
                         <div class="col-lg-8 ">
                             <hr class="divider light my-4">
                             <p class="text-white mb-4">
-                                Platzhalter Text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan orci sit amet porta euismod. Nam id turpis sed sem posuere porttitor varius eu risus. Donec condimentum ligula magna, sed pellentesque mi vestibulum placerat. Suspendisse id nibh nec lectus elementum vestibulum in vitae urna. Suspendisse potenti. Donec ex diam, posuere ut iaculis et, eleifend laoreet leo. Ut tempor, sem sed eleifend pretium, justo ex sollicitudin augue, a blandit eros justo id sapien. Mauris viverra tempus massa, ut cursus felis feugiat id.
+                                @Model.Value("technikkurseText")
                             </p>
                         </div>
-                    
+
                     </div>
                 </div>
             </div>
             <div class="col-lg-5 mt-5 mt-lg-0">
                 <div class="container text-center">
-                    <h2 class="mb-4">Grundkurse</h2>
+                    <h2 class="mb-4">@Model.Value("grundkurseUberschrift")</h2>
                     <div class="row justify-content-center">
                         <div class="col-lg-8 text-center">
                             <hr class="divider light my-4">
                             <p class="text-white mb-4 text-left">
-                                Platzhalter Text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan orci sit amet porta euismod. Nam id turpis sed sem posuere porttitor varius eu risus. Donec condimentum ligula magna, sed pellentesque mi vestibulum placerat. Suspendisse id nibh nec lectus elementum vestibulum in vitae urna. Suspendisse potenti. Donec ex diam, posuere ut iaculis et, eleifend laoreet leo. Ut tempor, sem sed eleifend pretium, justo ex sollicitudin augue, a blandit eros justo id sapien. Mauris viverra tempus massa, ut cursus felis feugiat id.
+                                @Model.Value("grundkurseText")
 
                             </p>
                         </div>
@@ -322,13 +305,13 @@
                     <div class="col-lg-8 text-center">
                         Bei Fragen einfach anrufen!
                         <br />
-                        <br /> 
-                        <i class="fas fa-phone mb-3" style="font-size:1.5rem"> <span class="pl-2">+1 (202) 555-0149</span></i>
+                        <br />
+                        <i class="fas fa-phone mb-3" style="font-size:1.5rem"> <span class="pl-2">@Model.Value("telefonnummer")</span></i>
                     </div>
                 </div>
             </div>
         </div>
-     
+
     </div>
 </section>
 
@@ -339,30 +322,29 @@
             <div class="col-lg-1"></div>
             <div class="col-lg-5">
                 <div class="container text-center">
-                    <h2 class="mb-4">Angebote für Schulen</h2>
+                    <h2 class="mb-4">@Model.Value("schuleUberschrift")</h2>
                     <div class="row justify-content-center text-left">
                         <div class="col-lg-8 ">
                             <hr class="divider light my-4">
                             <p class="text-white mb-4">
-                                Platzhalter Text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan orci sit amet porta euismod. Nam id turpis sed sem posuere porttitor varius eu risus. Donec condimentum ligula magna, sed pellentesque mi vestibulum placerat. Suspendisse id nibh nec lectus elementum vestibulum in vitae urna. Suspendisse potenti. Donec ex diam, posuere ut iaculis et, eleifend laoreet leo. Ut tempor, sem sed eleifend pretium, justo ex sollicitudin augue, a blandit eros justo id sapien. Mauris viverra tempus massa, ut cursus felis feugiat id.
+                                @Model.Value("schuleText")
                             </p>
                         </div>
-                     
+
                     </div>
                 </div>
             </div>
             <div class="col-lg-5 mt-5 mt-lg-0">
                 <div class="container text-center">
-                    <h2 class="mb-4">Angebote für Unternehmen</h2>
+                    <h2 class="mb-4">@Model.Value("unternehmenUberschrift")</h2>
                     <div class="row justify-content-center">
                         <div class="col-lg-8 text-center">
                             <hr class="divider light my-4">
                             <p class="text-white mb-4 text-left">
-                                Platzhalter Text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan orci sit amet porta euismod. Nam id turpis sed sem posuere porttitor varius eu risus. Donec condimentum ligula magna, sed pellentesque mi vestibulum placerat. Suspendisse id nibh nec lectus elementum vestibulum in vitae urna. Suspendisse potenti. Donec ex diam, posuere ut iaculis et, eleifend laoreet leo. Ut tempor, sem sed eleifend pretium, justo ex sollicitudin augue, a blandit eros justo id sapien. Mauris viverra tempus massa, ut cursus felis feugiat id.
-
+                                @Model.Value("unternehmenText")
                             </p>
                         </div>
-                    
+
                     </div>
                 </div>
             </div>
@@ -378,7 +360,7 @@
                         Bei Fragen einfach anrufen!
                         <br />
                         <br />
-                        <i class="fas fa-phone mb-3" style="font-size:1.5rem"> <span class="pl-2">+1 (202) 555-0149</span></i>
+                        <i class="fas fa-phone mb-3" style="font-size:1.5rem"> <span class="pl-2">@Model.Value("telefonnummer")</span></i>
                     </div>
                 </div>
             </div>
@@ -395,62 +377,28 @@
     </section>*@
 
 <!-- Portfolio Section -->
+
+
 <section id="portfolio">
     <div class="container-fluid p-0">
         <div class="row no-gutters">
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="../img/Georg nachher.jpg">
-                    <img class="img-fluid" src="../img/Georg nachher.jpg" alt="">
-                    <div class="portfolio-box-caption">
-                        <i class="fa fa-search-plus pl-3"></i>
 
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="../img/Kindertraining.jpg">
-                    <img class="img-fluid" src="../img/Kindertraining.jpg" alt="">
-                    <div class="portfolio-box-caption">
-                        <i class="fa fa-search-plus pl-3"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="../img/Talissa.jpg">
-                    <img class="img-fluid" src="../img/Talissa.jpg" alt="">
-                    <div class="portfolio-box-caption">
-                        <i class="fa fa-search-plus pl-3"></i>
+            @{
+                var gallerie = Model.Value<IEnumerable<IPublishedContent>>("gallerie");
+                foreach (var item in gallerie)
+                {
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="@item.Url">
+                            <img class="img-fluid" src="@item.Url" alt="">
+                            <div class="portfolio-box-caption">
+                                <i class="fa fa-search-plus pl-3"></i>
 
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="../img/Gruppe 2 nachher .jpg">
-                    <img class="img-fluid" src="../img/Gruppe 2 nachher .jpg" alt="">
-                    <div class="portfolio-box-caption">
-                        <i class="fa fa-search-plus pl-3"></i>
+                }
+            }
 
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="../img/Lennox nachher.jpg">
-                    <img class="img-fluid" src="../img/Lennox nachher.jpg" alt="">
-                    <div class="portfolio-box-caption">
-                        <i class="fa fa-search-plus pl-3"></i>
-
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="../img/Trine nachher.jpg">
-                    <img class="img-fluid" src="../img/Trine nachher.jpg" alt="">
-                    <div class="portfolio-box-caption p-3">
-                        <i class="fa fa-search-plus pl-3"></i>
-
-                    </div>
-                </a>
-            </div>
         </div>
     </div>
 </section>
@@ -484,12 +432,12 @@
         <div class="row">
             <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
                 <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-                <div>+1 (202) 555-0149</div>
+                <div>@Model.Value("telefonnummer")</div>
             </div>
             <div class="col-lg-4 mr-auto text-center">
                 <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
                 <!-- Make sure to change the email address in anchor text AND the link below! -->
-                <a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+                <a class="d-block" href="mailto:contact@yourwebsite.com">@Model.Value("eMail")</a>
             </div>
             <br />
 

@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "b85650425458c534")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "9f2aef9f94bf4a0b")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
 // FILE: models.generated.cs
@@ -99,6 +99,83 @@ namespace Umbraco.Web.PublishedModels
 		// properties
 
 		///<summary>
+		/// Angebot
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("angebot")]
+		public IEnumerable<string> Angebot => this.Value<IEnumerable<string>>("angebot");
+
+		///<summary>
+		/// Ausnahmen
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("ausnahmen")]
+		public string Ausnahmen => this.Value<string>("ausnahmen");
+
+		///<summary>
+		/// E-Mail
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("eMail")]
+		public string EMail => this.Value<string>("eMail");
+
+		///<summary>
+		/// Feiertage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("feiertage")]
+		public string Feiertage => this.Value<string>("feiertage");
+
+		///<summary>
+		/// Ferien
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("ferien")]
+		public string Ferien => this.Value<string>("ferien");
+
+		///<summary>
+		/// Gallerie
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("gallerie")]
+		public IEnumerable<Image> Gallerie => this.Value<IEnumerable<Image>>("gallerie");
+
+		///<summary>
+		/// Geburtstage Text 1
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("geburtstageText1")]
+		public string GeburtstageText1 => this.Value<string>("geburtstageText1");
+
+		///<summary>
+		/// Geburtstage Text 2
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("geburtstageText2")]
+		public string GeburtstageText2 => this.Value<string>("geburtstageText2");
+
+		///<summary>
+		/// Geburtstage Überschrift
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("geburtstageUberschrift")]
+		public string GeburtstageUberschrift => this.Value<string>("geburtstageUberschrift");
+
+		///<summary>
+		/// Grundkurse Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("grundkurseText")]
+		public string GrundkurseText => this.Value<string>("grundkurseText");
+
+		///<summary>
+		/// Grundkurse Überschrift
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("grundkurseUberschrift")]
+		public string GrundkurseUberschrift => this.Value<string>("grundkurseUberschrift");
+
+		///<summary>
 		/// Infotext
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
@@ -106,11 +183,109 @@ namespace Umbraco.Web.PublishedModels
 		public string Infotext => this.Value<string>("infotext");
 
 		///<summary>
+		/// Kids Text 1
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("kidsText1")]
+		public string KidsText1 => this.Value<string>("kidsText1");
+
+		///<summary>
+		/// Kids Text 2
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("kidsText2")]
+		public string KidsText2 => this.Value<string>("kidsText2");
+
+		///<summary>
+		/// Kids Überschrift
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("kidsUberschrift")]
+		public string KidsUberschrift => this.Value<string>("kidsUberschrift");
+
+		///<summary>
+		/// Leihausrüstung
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("leihausrustung")]
+		public IEnumerable<string> Leihausrustung => this.Value<IEnumerable<string>>("leihausrustung");
+
+		///<summary>
+		/// Öffnungszeit 1
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("offnungszeit1")]
+		public string Offnungszeit1 => this.Value<string>("offnungszeit1");
+
+		///<summary>
+		/// Öffnungszeit 2
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("offnungszeit2")]
+		public string Offnungszeit2 => this.Value<string>("offnungszeit2");
+
+		///<summary>
+		/// Ruhetag
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("ruhetag")]
+		public string Ruhetag => this.Value<string>("ruhetag");
+
+		///<summary>
+		/// Schule Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("schuleText")]
+		public string SchuleText => this.Value<string>("schuleText");
+
+		///<summary>
+		/// Schule Überschrift
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("schuleUberschrift")]
+		public string SchuleUberschrift => this.Value<string>("schuleUberschrift");
+
+		///<summary>
+		/// Technikkurse Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("technikkurseText")]
+		public string TechnikkurseText => this.Value<string>("technikkurseText");
+
+		///<summary>
+		/// Technikkurse Überschrift
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("technikkurseUberschrift")]
+		public string TechnikkurseUberschrift => this.Value<string>("technikkurseUberschrift");
+
+		///<summary>
+		/// Telefonnummer
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("telefonnummer")]
+		public string Telefonnummer => this.Value<string>("telefonnummer");
+
+		///<summary>
 		/// Überschrift
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
 		[ImplementPropertyType("uberschrift")]
 		public string Uberschrift => this.Value<string>("uberschrift");
+
+		///<summary>
+		/// Unternehmen Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("unternehmenText")]
+		public string UnternehmenText => this.Value<string>("unternehmenText");
+
+		///<summary>
+		/// Unternehmen Überschrift
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("unternehmenUberschrift")]
+		public string UnternehmenUberschrift => this.Value<string>("unternehmenUberschrift");
 	}
 
 	/// <summary>Folder</summary>
