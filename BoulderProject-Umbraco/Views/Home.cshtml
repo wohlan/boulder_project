@@ -254,9 +254,24 @@
             </tbody>
         </table>
 
+        <div class="text-left col-lg-6 m-auto">
+            <hr class="divider my-4" />
+            <small>
+                <b>*ermäßigt:</b>
+                <p class="m-auto">
+                    - Kinder und Jugendliche, die noch nicht 18 Jahre alt sind
+                    <br />
+                    - Schüler und Studenten unter Vorlage einer gültigen Bescheinigung
+                    <br />
+                    - Mitglieder unserer Kooperationspartner
+                    <br />
+                    <br />
 
-        @*<hr class="divider my-4" />
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#map">Zur Anfahrt!</a>*@
+                    Dauerkarten sind hiervon ausgenommen. Rabatte sind untereinander nicht kombinierbar.
+                </p>
+            </small>
+        </div>
+        </div>
     </div>
 </section>
 
@@ -407,13 +422,30 @@
 
 
 <section class="page-section bg-dark text-white" id="map">
-    <div class="container text-center">
+    <div class="container-fluid text-center">
         <h2 class="mb-4">Anfahrt</h2>
         <hr class="divider my-4">
         <p class="text-white-75 mb-5">
-            BOULDER-POINT - KISDORFERWEG 15A-C - 24568 KALTENKIRCHEN
+            @Model.Value("adresse")
         </p>
-        <img src="~/img/boulder_map.JPG" class="img-fluid border" alt="Responsive image">
+
+        <div class="row">
+            <div class="col-lg-2"></div>
+            
+            <div class="col-lg-6 pr-4">
+                <img src="~/img/boulder_map.JPG" class="img-fluid border" alt="Responsive image">
+            </div>
+
+            <div class="col-lg-3  text-left pl-5">
+
+
+                <p class="text-white-75 mb-4 mt-5 text-left">
+                    @Model.Value("beschreibung")
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    
 
     </div>
 

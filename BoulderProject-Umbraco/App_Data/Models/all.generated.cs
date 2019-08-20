@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "9f2aef9f94bf4a0b")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "eb5132562d1cda70")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -99,6 +99,13 @@ namespace Umbraco.Web.PublishedModels
 		// properties
 
 		///<summary>
+		/// Adresse
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("adresse")]
+		public string Adresse => this.Value<string>("adresse");
+
+		///<summary>
 		/// Angebot
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
@@ -111,6 +118,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
 		[ImplementPropertyType("ausnahmen")]
 		public string Ausnahmen => this.Value<string>("ausnahmen");
+
+		///<summary>
+		/// Beschreibung
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("beschreibung")]
+		public string Beschreibung => this.Value<string>("beschreibung");
 
 		///<summary>
 		/// E-Mail
