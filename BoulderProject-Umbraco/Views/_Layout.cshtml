@@ -20,7 +20,7 @@
     <!-- Font Awesome Icons -->
     <link href="../Content/fontawesome.min.css" rel="stylesheet">
     <link href="../Content/all.min.css" rel="stylesheet">
-
+    <link href="~/Content/datepicker.css" rel="stylesheet" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -72,49 +72,50 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container-fluid px-xl-5">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                    @*   <img src="~/img/logo-boulder-point.png"  alt="">*@
-                    @*BOULDER POINT*@
-                </a>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                @*   <img src="~/img/logo-boulder-point.png"  alt="">*@
+                @*BOULDER POINT*@
+            </a>
 
-                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse mr-xl-5" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0 ">
-                    @if(ViewBag.Title == "Boulder-Point") {
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#classes">Kurse</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#TeamEvents">Firmen & Schulen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#kids">Für Kinder</a>
-                    </li>
+                    @if (ViewBag.Title == "Boulder-Point")
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#classes">Kurse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#TeamEvents">Firmen & Schulen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#kids">Für Kinder</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#times">Öffnungszeiten</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#prices">Preise</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#Gallery">Bilder</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#times">Öffnungszeiten</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#prices">Preise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#Gallery">Bilder</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#map">Anfahrt</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#map">Anfahrt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+                        </li>
                     }
                     else
                     {
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="/home">Zurück zur Hauptseite</a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="/home">Zurück zur Hauptseite</a>
+                        </li>
                     }
                 </ul>
             </div>
@@ -130,9 +131,9 @@
     <footer class="bg-light py-5">
         <div class="container">
             <div class="small text-center text-muted">
-                    <a class="nav-link d-inline-block" href="/impressum">Impressum</a>
-                    <a class="nav-link d-inline-block" href="/agb">AGB</a>
-                    <a class="nav-link d-inline-block" href="/datenschutz">Datenschutz</a>
+                <a class="nav-link d-inline-block" href="/impressum">Impressum</a>
+                <a class="nav-link d-inline-block" href="/agb">AGB</a>
+                <a class="nav-link d-inline-block" href="/datenschutz">Datenschutz</a>
             </div>
         </div>
     </footer>
@@ -144,8 +145,10 @@
     <!-- Plugin JavaScript -->
     <script src="../Scripts/jquery.easing.min.js"></script>
     <script src="../Scripts/jquery.magnific-popup.min.js"></script>
-
     <!-- Custom scripts for this template -->
+    <script src="~/Scripts/datepicker.js"></script>
+    <script src="~/Scripts/i18n/datepicker.de.js"></script>
     <script src="../Scripts/creative.min.js"></script>
+    <script src="~/Scripts/custom.js"></script>
 </body>
 </html>

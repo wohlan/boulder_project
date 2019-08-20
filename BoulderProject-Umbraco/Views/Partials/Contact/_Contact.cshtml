@@ -41,6 +41,16 @@
 
     </div>
 
+    <!-- calendar-->
+<div class="form-group text-left">
+    <label>
+        Termine für Kindergeburtstage
+    </label>
+    <div id="datepicker" class="text-right"></div>
+    <input name="Date" type="hidden" id="date-input" />
+
+</div>
+
     <!--message-->
     <div class="form-group text-left">
         <label>
@@ -48,7 +58,6 @@
         </label>
         @*@Html.TextAreaFor(m => m.Message)*@
         <textarea class="form-control" cols="20" id="Message" name="Message" rows="4"></textarea>
-
     </div>
 
     <button class="btn btn-primary btn-xl ">Jetzt abschicken!</button>
