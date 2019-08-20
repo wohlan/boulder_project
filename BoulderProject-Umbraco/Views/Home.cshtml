@@ -16,7 +16,11 @@
                 <p class="text-white-75 font-weight-light mb-5">@Model.Value("infoText")</p>
                 @*<a class="btn btn-primary btn-xl js-scroll-trigger" href="#times">Mehr Erfahren!</a>*@
             </div>
+            <div class="text-white text-right">
+                <span>Einverständniserklärung für Minderjährige</span>
+            </div>
         </div>
+
     </div>
 </header>
 
@@ -33,8 +37,8 @@
                     <br />
                     @Model.Value("offnungszeit2")
                     <br />
-                    <br />
-                    @Model.Value("ruhetag")
+                        <br />
+                        @Model.Value("ruhetag")
                 </p>
             </div>
         </div>
@@ -44,7 +48,13 @@
                 <p class="text-white mb-4">
                     @Model.Value("feiertage")
                 </p>
+                <p class="text-white-75">
+                    <small>
+                        Ausnahmen:
 
+                        @Model.Value("ausnahmen")
+                    </small>
+                </p>
             </div>
             <div class="col-lg-3 text-center">
                 <p class="text-white mb-4">
@@ -54,15 +64,7 @@
             <div class="col-lg-3"></div>
 
         </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-                <p class="text-white-75">
-                    Ausnahmen:
-                    <br />
-                    @Model.Value("ausnahmen")
-                </p>
-            </div>
-        </div>
+
         @*<hr class="divider light my-4">
 
             <div class="row justify-content-center">
