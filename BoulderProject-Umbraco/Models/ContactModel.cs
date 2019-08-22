@@ -17,6 +17,7 @@ namespace BoulderProject_Umbraco.Models
         [Display(Name = "Email Address:")]
         public string EmailAddress { get; set; }
 
+        public string Date { get; set; }
         [Required]
         [Display(Name = "Message:")]
         public string Message { get; set; }
