@@ -34,6 +34,10 @@ namespace BoulderProject_Umbraco.Controllers
             {
                 var basicCredential = new NetworkCredential("anmeldung-test@boulder-point.de", "bulderadmin.pw");
 
+                var messageHtml = "";
+
+
+
                 using (MailMessage message = new MailMessage())
                 {
                     smtpClient.Host = "smtp.ionos.de";
