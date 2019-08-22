@@ -19,7 +19,7 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "a339709e884da396")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "4863fc17db5027e1")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 namespace Umbraco.Web.PublishedModels
@@ -270,6 +270,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
 		[ImplementPropertyType("uberschrift")]
 		public string Uberschrift => this.Value<string>("uberschrift");
+
+		///<summary>
+		/// Überschrift Zusatz
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("uberschriftZusatz")]
+		public string UberschriftZusatz => this.Value<string>("uberschriftZusatz");
 
 		///<summary>
 		/// Unternehmen Text

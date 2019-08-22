@@ -2,6 +2,8 @@
 using System.Web.Mvc;
 using BoulderProject_Umbraco.Models;
 using System.Net.Mail;
+using System.Net;
+using System;
 
 namespace BoulderProject_Umbraco.Controllers
 {
@@ -28,11 +30,38 @@ namespace BoulderProject_Umbraco.Controllers
 
         private void SendEmail(ContactModel model)
         {
-            MailMessage message = new MailMessage("test@wohlan.de", model.EmailAddress);
-            message.Subject = string.Format("Neue Anfrage von {0} {1} - {2}", model.FirstName, model.LastName, model.EmailAddress);
-            message.Body = model.Message;
-            SmtpClient client = new SmtpClient("127.0.0.1", 25);
-            client.Send(message);
+            using (SmtpClient smtpClient = new SmtpClient())
+            {
+                var basicCredential = new NetworkCredential("anmeldung-test@boulder-point.de", "bulderadmin.pw");
+
+                using (MailMessage message = new MailMessage())
+                {
+                    smtpClient.Host = "smtp.ionos.de";
+                    smtpClient.UseDefaultCredentials = false;
+                    smtpClient.Credentials = basicCredential;
+                    smtpClient.Port = 587;
+                    smtpClient.EnableSsl = true;
+
+                    message.From = new MailAddress(model.EmailAddress);
+                    message.Subject = string.Format("Neue Anfrage von {0} {1} - {2}", model.FirstName, model.LastName, model.EmailAddress);
+                    message.IsBodyHtml = true;
+                    message.Body = model.Message;
+                    message.To.Add("lennardwohlan@web.de");
+
+                    try
+                    {
+                        smtpClient.Send(message);
+                    }
+                    catch (Exception e)
+                    {
+                        Response.Write(e.Message);
+                    }
+                }
+            }
+            
+
+
+            
         }
     }
 }
