@@ -11,40 +11,37 @@
     <!--first name-->
     <div class="form-group text-left">
         <label>
-
-            Vorname
+            Vorname*
         </label>
         @*@Html.TextBoxFor(m => m.FirstName)*@
-        <input class="form-control" id="FirstName" name="FirstName" type="text" value="">
+        <input class="form-control" id="FirstName" name="FirstName" required type="text" value="">
 
     </div>
 
     <!--last name-->
     <div class="form-group text-left">
         <label>
-
-            Nachname
+            Nachname*
         </label>
         @*@Html.TextBoxFor(m => m.LastName)*@
-        <input class="form-control" id="LastName" name="LastName" type="text" value="">
+        <input class="form-control" id="LastName" name="LastName" type="text" required value="">
 
     </div>
 
     <!--email adress-->
     <div class="form-group text-left">
         <label>
-
-            E-Mail Adresse
+            E-Mail Adresse*
         </label>
         @*@Html.TextBoxFor(m => m.EmailAddress)*@
-        <input class="form-control" id="EmailAddress" name="EmailAddress" type="text" value="">
+        <input class="form-control" id="EmailAddress" name="EmailAddress" type="text" required value="">
 
     </div>
 
     <!-- calendar-->
 <div class="form-group text-left">
     <label>
-        Termine für Kindergeburtstage
+        Termin für Kinder
     </label>
     <div id="datepicker" class="text-right"></div>
     <input name="Date" type="hidden" id="date-input" />
