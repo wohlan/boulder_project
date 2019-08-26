@@ -36,6 +36,26 @@ namespace BoulderProject_Umbraco.Controllers
 
                 var messageHtml = "";
 
+                var header = "";
+
+                if (model.Date !="")
+                {
+                    header = "<h2>Eine neue Geburtstags Anfrage ist eingegangen!<!h2></br></br>";
+                }
+                else
+                {
+                    header = "<h2>Eine neue Anfrage ist eingegangen!</h2></br></br>";
+                }
+
+                var htmlBody = "<p>Vorname: " + model.FirstName + "</p></br>" +
+                               "<p>Nachname: " + model.LastName + " </p></br>" +
+                               "<p>Emailadresse: " + model.EmailAddress + "</p></br>" +
+                               "<p>Details: " + model.Message + "</p>";
+
+                messageHtml = header + htmlBody;
+
+
+
 
 
                 using (MailMessage message = new MailMessage())
@@ -49,11 +69,12 @@ namespace BoulderProject_Umbraco.Controllers
                     message.From = new MailAddress(model.EmailAddress);
                     message.Subject = string.Format("Neue Anfrage von {0} {1} - {2}", model.FirstName, model.LastName, model.EmailAddress);
                     message.IsBodyHtml = true;
-                    message.Body = model.Message;
-                    message.To.Add("lennardwohlan@web.de");
+                    message.Body = messageHtml;
+                    message.To.Add("kirisute94@gmail.com");
 
                     try
                     {
+                        smtpClient.SendCompleted += new SendCompletedEventHandler(smtp_SendCompleted);
                         smtpClient.Send(message);
                     }
                     catch (Exception e)
@@ -66,6 +87,13 @@ namespace BoulderProject_Umbraco.Controllers
 
 
             
+        }
+        void smtp_SendCompleted(object sender, System.ComponentModel.AsyncCompletedEventArgs e)
+        {
+            if (e.Cancelled == true || e.Error != null)
+            {
+                throw new Exception(e.Cancelled ? "EMail sedning was canceled." : "Error: " + e.Error.ToString());
+            }
         }
     }
 }
