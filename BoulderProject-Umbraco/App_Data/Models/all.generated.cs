@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "4863fc17db5027e1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "7c211c942d8c681b")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -197,11 +197,32 @@ namespace Umbraco.Web.PublishedModels
 		public string Infotext => this.Value<string>("infotext");
 
 		///<summary>
+		/// Kids Beschreibung
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("kidsBeschreibung")]
+		public string KidsBeschreibung => this.Value<string>("kidsBeschreibung");
+
+		///<summary>
+		/// Kids Geburtstag Auflistung
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("kidsGeburtstagAuflistung")]
+		public IEnumerable<string> KidsGeburtstagAuflistung => this.Value<IEnumerable<string>>("kidsGeburtstagAuflistung");
+
+		///<summary>
+		/// Kids Minderjährig
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
+		[ImplementPropertyType("kidsMinderjahrig")]
+		public string KidsMinderjahrig => this.Value<string>("kidsMinderjahrig");
+
+		///<summary>
 		/// Kids Text 1
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
 		[ImplementPropertyType("kidsText1")]
-		public string KidsText1 => this.Value<string>("kidsText1");
+		public IHtmlString KidsText1 => this.Value<IHtmlString>("kidsText1");
 
 		///<summary>
 		/// Kids Text 2

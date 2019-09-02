@@ -97,31 +97,24 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-1"></div>
-            <div class="col-lg-5">
-                <div class="container text-center">
-                    <h2 class="mb-4">@Model.Value("kidsUberschrift")</h2>
-                    <div class="row justify-content-center text-left">
-                        <div class="col-lg-8 ">
-                            <hr class="divider light my-4">
-                            <p class="text-white mb-4">
-                                @Model.Value("kidsText1")
-                            </p>
-                        </div>
-                        <div class="col-lg-8 text-center">
-                            <hr class="divider light my-4">
 
-                            <p class="text-white mb-4 text-left">
-                                @Model.Value("kidsText2")
-
-                                <br />
-                                <br />
-                            </p>
-                            <a class="btn btn-light btn-xl" href="~/img/Boulder-Point-Einverstaendniserklaerung.pdf" download>Formular herunterladen</a>
-
-                        </div>
-                    </div>
+            <div class="col-lg-10 px-5">
+                <div class="px-lg-4">
+                    <p class="text-white mb-4 px-lg-5">
+                        @Model.Value("kidsBeschreibung")
+                        <b>@Model.Value("kidsMinderjahrig")</b>
+                    </p>
                 </div>
+                <p class="text-white mb-4 text-center">
+                    Die Einverständniserklärung könnt ihr <u><a href="~/img/Boulder-Point-Einverstaendniserklaerung.pdf" download>HIER</a></u> herunterladen!
+
+                </p>
             </div>
+            <div class="col-lg-1"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
             <div class="col-lg-5 mt-5 mt-lg-0">
                 <div class="container text-center">
                     <h2 class="mb-4">@Model.Value("geburtstageUberschrift")</h2>
@@ -130,7 +123,14 @@
                             <hr class="divider light my-4">
                             <p class="text-white mb-4 text-left">
                                 @Model.Value("geburtstageText1")
-
+                                <br />
+                                <ul class="text-left">
+                                 
+                                        @foreach (var item in (string[])Model.Value("kidsGeburtstagAuflistung"))
+                                        {
+                                            <li>@item</li>
+                                        }
+</ul>
                             </p>
                         </div>
                         <div class="col-lg-8 text-center">
@@ -143,12 +143,45 @@
                                 <br />
                                 <br />
                             </p>
-                            <a class="btn btn-light btn-xl js-scroll-trigger" href="#contact">Kontaktiere uns!</a>
+
+                            <h5><u><a href="#contact" class="js-scroll-trigger">Terminanfrage</a></u></h5>
+                            <br />
+                            <span>oder telefonisch @Model.Value("telefonnummer")</span></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="container text-center">
+                    <h2 class="mb-4">@Model.Value("kidsUberschrift")</h2>
+                    <div class="row justify-content-center text-left">
+                        <div class="col-lg-8 ">
+                            <hr class="divider light my-4">
+                            <p class="text-white mb-4">
+                                @*@{
+                                    var stringedText = (string)Model.Value("kidsText1");
+                                    stringedText = stringedText.Replace(".", ".</br>");
+                                }
+                                @Html.Raw(stringedText)*@
+                                @Model.Value("kidsText1")
+                            </p>
+                        </div>
+                        <div class="col-lg-8 text-center">
+                            @*<hr class="divider light my-4">*@
+
+                            <p class="text-white mb-4 text-left">
+                                @Model.Value("kidsText2")
+
+                                <br />
+                                <br />
+                            </p>
+                           
 
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-1"></div>
 
         </div>
