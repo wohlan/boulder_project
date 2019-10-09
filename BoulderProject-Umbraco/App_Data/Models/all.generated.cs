@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "7c211c942d8c681b")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "63f79763facb8aab")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -103,7 +103,7 @@ namespace Umbraco.Web.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
 		[ImplementPropertyType("adresse")]
-		public string Adresse => this.Value<string>("adresse");
+		public IHtmlString Adresse => this.Value<IHtmlString>("adresse");
 
 		///<summary>
 		/// Angebot
