@@ -472,25 +472,44 @@
     <div class="container-fluid text-center">
         <h2 class="mb-4">Anfahrt</h2>
         <hr class="divider my-4">
-  
-            @Model.Value("adresse")
 
-        <div class="row mt-5">
-            <div class="col-lg-2"></div>
+        @Model.Value("adresse")
+        @if (Model.Value("beschreibung") != "")
+        {
+            <div class="row mt-5">
+                <div class="col-lg-2"></div>
 
-            <div class="col-lg-6 pr-4">
-                <img src="~/img/boulder_map.JPG" class="img-fluid border" alt="Responsive image">
+                <div class="col-lg-6 pr-4">
+                    <img src="~/img/boulder_map.JPG" class="img-fluid border" alt="Responsive image">
+                </div>
+
+                <div class="col-lg-3  text-left pl-5">
+
+
+                    <p class="text-white-75 mb-4 mt-5 text-left">
+                        @Model.Value("beschreibung")
+                    </p>
+                </div>
+                <div class="col-lg-1"></div>
             </div>
+        }
+        else
+        {
+            <div class="row mt-5">
+                <div class="col-lg-3"></div>
 
-            <div class="col-lg-3  text-left pl-5">
+                <div class="col-lg-6 pr-4">
+                    <img src="~/img/boulder_map.JPG" class="img-fluid border" alt="Responsive image">
+                </div>
+
+                <div class="col-lg-3  text-left pl-5">
 
 
-                <p class="text-white-75 mb-4 mt-5 text-left">
-                    @Model.Value("beschreibung")
-                </p>
+                </div>
+                <div class="col-lg-1"></div>
             </div>
-            <div class="col-lg-1"></div>
-        </div>
+        }
+
 
 
     </div>

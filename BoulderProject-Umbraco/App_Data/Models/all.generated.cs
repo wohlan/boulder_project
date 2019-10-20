@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "63f79763facb8aab")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "34cc3b0d8bbeb42b")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.6")]
 
 
 // FILE: models.generated.cs
@@ -180,7 +180,7 @@ namespace Umbraco.Web.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
 		[ImplementPropertyType("grundkurseText")]
-		public string GrundkurseText => this.Value<string>("grundkurseText");
+		public IHtmlString GrundkurseText => this.Value<IHtmlString>("grundkurseText");
 
 		///<summary>
 		/// Grundkurse Überschrift
@@ -271,7 +271,7 @@ namespace Umbraco.Web.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
 		[ImplementPropertyType("schuleText")]
-		public string SchuleText => this.Value<string>("schuleText");
+		public IHtmlString SchuleText => this.Value<IHtmlString>("schuleText");
 
 		///<summary>
 		/// Schule Überschrift
@@ -285,7 +285,7 @@ namespace Umbraco.Web.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
 		[ImplementPropertyType("technikkurseText")]
-		public string TechnikkurseText => this.Value<string>("technikkurseText");
+		public IHtmlString TechnikkurseText => this.Value<IHtmlString>("technikkurseText");
 
 		///<summary>
 		/// Technikkurse Überschrift
@@ -320,7 +320,7 @@ namespace Umbraco.Web.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
 		[ImplementPropertyType("unternehmenText")]
-		public string UnternehmenText => this.Value<string>("unternehmenText");
+		public IHtmlString UnternehmenText => this.Value<IHtmlString>("unternehmenText");
 
 		///<summary>
 		/// Unternehmen Überschrift
