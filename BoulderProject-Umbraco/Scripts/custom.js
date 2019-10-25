@@ -53,10 +53,3 @@ $("#kidsCheckBox").click(function () {
         $("#calendarGroup").find("input").attr("disabled", "disabled");
     }
 });
-
-
-
-
-//$("#mapImage").click(function () {
-//    window.open("https://www.google.com/maps/place/Boulder-Point/@53.8281901,9.9797165,17z/data=!3m1!4b1!4m5!3m4!1s0x47b22e33490595bd:0xa9055b293eeb1364!8m2!3d53.828187!4d9.9819052");
-//});
