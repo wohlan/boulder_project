@@ -39,28 +39,40 @@
     </div>
 
     <!-- calendar-->
-<div class="form-group text-left">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6">
-                <label>
-                    Termin für Kinder
-                </label>
-                <div id="datepicker" class="text-right"></div>
-            </div>
-            <div class="col-lg-6"></div>
-            <select id="timeSelect" class="form-control">
-                <option value="18:00">18:00</option>
-                <option value="18:30">18:30</option>
-                <option value="19:00">19:00</option>
-                <option value="19:30">19:30</option>
-            </select>
-        </div>
-    </div>
-  
-    <input name="Date" type="hidden" id="date-input" />
-
+<div class="form-group text-left pt-2">
+    <input id="kidsCheckBox" type="checkbox" style="height:20px; width:20px;"/><label class="ml-3" for="kidsCheckBox">Kindergeburtstag</label>
 </div>
+
+
+    <div class="form-group text-left collapse" id="calendarGroup">
+        <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col-lg-6">
+                    <label>
+                        Datum
+                    </label>
+                    <div id="datepicker" class="text-right"></div>
+                </div>
+                <div class="col-lg-6">
+                    <label>
+                        Zeitraum
+                    </label>
+                    <select id="timeSelect" class="form-control">
+                        <option value="11:30 bis 13:30">11:30 bis 13:30</option>
+                        <option value="13:00 bis 15:00">13:00 bis 15:00</option>
+                        <option value="14:00 bis 16:00">14:00 bis 16:00</option>
+                        <option value="15:30 bis 17:30">15:30 bis 17:30</option>
+                        <option value="16:00 bis 18:00">16:00 bis 18:00</option>
+                        <option value="16:30 bis 18:30">16:30 bis 18:30</option>
+                        <option value="18:00 bis 20:00">18:00 bis 20:00</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <input disabled name="Date" type="hidden" id="date-input" />
+
+    </div>
 
     <!--message-->
     <div class="form-group text-left">
