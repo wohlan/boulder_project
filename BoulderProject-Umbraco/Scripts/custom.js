@@ -4,7 +4,7 @@ date.setMinutes(0);
 date.setHours(15);
 $('#datepicker').datepicker({
     language: 'de',
-    timepicker: true,
+    timepicker: false,
     dateFormat:"dd.mm.yyyy",
     minHours: 15,
     maxHours: 20,
@@ -30,6 +30,8 @@ $('#datepicker').datepicker({
 
 $(".datepicker--time-row input").change(function () {
     var data = $('#datepicker').data("datepicker")._prevOnSelectValue;
+    var time = $("#timeSelect").val();
+    data += " " + time;
     $("#date-input").val(data);
 
 });

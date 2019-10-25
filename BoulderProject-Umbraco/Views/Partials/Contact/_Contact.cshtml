@@ -40,10 +40,24 @@
 
     <!-- calendar-->
 <div class="form-group text-left">
-    <label>
-        Termin für Kinder
-    </label>
-    <div id="datepicker" class="text-right"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <label>
+                    Termin für Kinder
+                </label>
+                <div id="datepicker" class="text-right"></div>
+            </div>
+            <div class="col-lg-6"></div>
+            <select id="timeSelect" class="form-control">
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+            </select>
+        </div>
+    </div>
+  
     <input name="Date" type="hidden" id="date-input" />
 
 </div>
