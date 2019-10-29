@@ -429,6 +429,7 @@
     <Content Include="Content\creative.min.css" />
     <Content Include="Content\datepicker.css" />
     <Content Include="Content\fontawesome.min.css" />
+    <Content Include="img\boulder_map_final.JPG" />
     <Content Include="Scripts\datepicker.js" />
     <Content Include="img\bg-masthead.jpg" />
     <Content Include="img\Boulder-Point_Logo18_Vektor_4c_ai.svg" />
