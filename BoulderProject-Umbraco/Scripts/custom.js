@@ -48,6 +48,7 @@ function toggleTimes(day) {
     var className = "." + day;
     $("#timeSelect option").attr("disabled", "disabled");
     $(className).removeAttr("disabled");
+    $("#timeSelect").val("");
 }
 
 //$("#kidsCheckBox").click(function () {
