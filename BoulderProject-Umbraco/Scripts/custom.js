@@ -24,7 +24,7 @@ $('#datepicker').datepicker({
     onSelect: function () {
         var data = $('#datepicker').data("datepicker")._prevOnSelectValue;
         $("#date-input").val(data);
-
+        toggleTimes($('#datepicker').data("datepicker").selectedDates[0].toString().split(" ")[0]);
     }
 });
 
@@ -43,13 +43,20 @@ $("#timeSelect").change(function () {
     $("#date-input").val(data);
 
 });
-$("#kidsCheckBox").click(function () {
-    if ($(this).prop("checked")) {
-        $("#calendarGroup").collapse('show');
-        $("#calendarGroup").find("input").removeAttr("disabled");
 
-    } else {
-        $("#calendarGroup").collapse('hide');
-        $("#calendarGroup").find("input").attr("disabled", "disabled");
-    }
-});
+function toggleTimes(day) {
+    var className = "." + day;
+    $("#timeSelect option").attr("disabled", "disabled");
+    $(className).removeAttr("disabled");
+}
+
+//$("#kidsCheckBox").click(function () {
+//    if ($(this).prop("checked")) {
+//        $("#calendarGroup").collapse('show');
+//        $("#calendarGroup").find("input").removeAttr("disabled");
+
+//    } else {
+//        $("#calendarGroup").collapse('hide');
+//        $("#calendarGroup").find("input").attr("disabled", "disabled");
+//    }
+//});
