@@ -510,8 +510,8 @@
     <Content Include="webfonts\fa-solid-900.svg" />
     <Content Include="img\Boulder-Point-Einverstaendniserklaerung.pdf" />
     <None Include="Properties\PublishProfiles\boulderpark - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\Inonos.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
