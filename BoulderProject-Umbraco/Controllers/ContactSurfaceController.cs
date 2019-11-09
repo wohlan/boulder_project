@@ -32,7 +32,7 @@ namespace BoulderProject_Umbraco.Controllers
         {
             using (SmtpClient smtpClient = new SmtpClient())
             {
-                var basicCredential = new NetworkCredential("anmeldung-test@boulder-point.de", "bulderadmin.pw");
+                var basicCredential = new NetworkCredential("system@boulder-point.de", "QWbeM7x9?6sT");
 
                 var messageHtml = "";
 
@@ -70,7 +70,7 @@ namespace BoulderProject_Umbraco.Controllers
                     message.Subject = string.Format("Neue Anfrage von {0} {1} - {2}", model.FirstName, model.LastName, model.EmailAddress);
                     message.IsBodyHtml = true;
                     message.Body = messageHtml;
-                    message.To.Add("kirisute94@gmail.com");
+                    message.To.Add("info@boulder-point.de");
 
                     try
                     {
